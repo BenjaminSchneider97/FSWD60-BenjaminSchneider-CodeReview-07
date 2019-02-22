@@ -1,5 +1,5 @@
 <form class="form-inline">
-        <input name="searchInput" class="form-control" placeholder="Search" #searchInput="ngModel" [(ngModel)]="searchText" style="width: 80%;">
+        <input name="searchInput" class="form-control" placeholder="Search..." #searchInput="ngModel" [(ngModel)]="searchText" style="width: 80%;">
         <button class="btn btn-outline-primary" (click)="searchText=''">X</button>
 </form>
 <table class="table table-sm">
@@ -10,7 +10,7 @@
                 <th></th>
         </thead>
         <ng-container *ngFor="let contact of contactArray">
-                <tr class="table-dark">
+                <tr class="table-dark" *ngIf="filterCondition(contact)">
                         <td>{{contact.firstName}}</td>
                         <td>{{contact.lastName}}</td>
                         <td>{{contact.mobile}}</td>
