@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ContactService } from "../shared/contact.service";
 
 @Component({
   selector: 'app-contact-list',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact-list.component.css']
 })
 export class ContactListComponent implements OnInit {
-
-  constructor() { }
+	contactArray =[];
+	constructor(private contactService: ContactService) { }
 
   ngOnInit() {
-  }
-
+  	 this.contactService.getContact().subscribe(
+  	 	(list) => {
+  	 		this.contactArray = list.map( (item) => {
+                                return {
+                                        $key : item.key,
+                                        ...item.payload.val()
+                                    }
+                                })
+  	 		});
+	}
 }

@@ -1,3 +1,19 @@
-<p>
-  contact-list works!
-</p>
+<table class="table table-sm">
+        <thead>
+                <th>First Name</th>
+                <th>last Name</th>
+                <th>Mobile</th>
+                <th></th>
+        </thead>
+        <ng-container *ngFor="let contact of contactArray">
+                <tr class="table-dark">
+                        <td>{{contact.firstName}}</td>
+                        <td>{{contact.lastName}}</td>
+                        <td>{{contact.mobile}}</td>
+                        <td>
+                                <button class="btn btn-info" (click)="contactService.populateForm(contact)">Edit</button>
+                                <button class="btn btn-danger">Delete</button>
+                        </td>
+                </tr>
+        </ng-container>
+</table>
