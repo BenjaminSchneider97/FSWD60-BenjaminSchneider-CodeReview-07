@@ -1,11 +1,11 @@
 <form class="form-inline">
-        <input name="searchInput" class="form-control" placeholder="Search..." #searchInput="ngModel" [(ngModel)]="searchText" style="width: 80%;">
+        <input name="searchInput" class="form-control" placeholder="Search..." #searchInput="ngModel" [(ngModel)]="searchText" style="width: 94%;">
         <button class="btn btn-outline-primary" (click)="searchText=''">X</button>
 </form>
 <table class="table table-sm">
         <thead>
                 <th>First Name</th>
-                <th>last Name</th>
+                <th>Last Name</th>
                 <th>Mobile</th>
                 <th></th>
         </thead>
@@ -15,8 +15,8 @@
                         <td>{{contact.lastName}}</td>
                         <td>{{contact.mobile}}</td>
                         <td>
-                                <button class="btn btn-info" (click)="contactService.populateForm(contact)">Edit</button>
-                                <button class="btn btn-danger" (click)="onDelete(contact.$key)">Delete</button>
+                                <button class="btns btn btn-info" (click)="contactService.populateForm(contact)">Edit</button>
+                                <button class="btns btn btn-danger" (click)="onDelete(contact.$key)">Delete</button>
                         </td>
                 </tr>
         </ng-container>

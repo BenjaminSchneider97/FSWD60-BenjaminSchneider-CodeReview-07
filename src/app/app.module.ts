@@ -12,13 +12,19 @@ import { ContactService } from "./shared/contact.service";
 import { AngularFireModule } from "angularfire2";
 import { AngularFireDatabaseModule } from "angularfire2/database";
 import { environment } from "../environments/environment";
+import { HeaderComponent } from './header/header.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ContactComponent,
-    ContactListComponent
+    ContactListComponent,
+    HeaderComponent,
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
