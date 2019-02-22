@@ -41,4 +41,8 @@ export class ContactService {
 	        mobile: contact.mobile
 	    });
 	}
+
+	deleteContact($key: string){
+	    this.contactList.remove($key);
+	  }
 }
