@@ -21,7 +21,7 @@
                         <div class="row">
 	                        <div class="form-group col-lg-12">
 	                                <label>Phone Number</label>
-	                                <input formControlName="mobile" class="form-control" [ngClass]="{'is-invalid':submitted && formControls.mobile.errors}">
+	                                <input formControlName="mobile" class="form-control" [ngClass]="{'is-invalid':submitted && formControls.mobile.errors}" type="number">
 	                                <div class="invalid-feedback" *ngIf="submitted && formControls.mobile.errors">
 	                                        <label *ngIf="formControls.mobile.errors.required">This field is required</label>
 	                                        <label *ngIf="formControls.mobile.errors.minlength">at least 8 numbers</label>

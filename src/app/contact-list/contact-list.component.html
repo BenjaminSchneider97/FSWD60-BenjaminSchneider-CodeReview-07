@@ -1,6 +1,6 @@
 <form class="form-inline">
         <input name="searchInput" class="form-control" placeholder="Search..." #searchInput="ngModel" [(ngModel)]="searchText" style="width: 94%;">
-        <button class="btn btn-outline-primary" (click)="searchText=''">X</button>
+        <button class="btn btn-outline-primary" (click)="searchText=''"><i class="fas fa-times"></i></button>
 </form>
 <table class="table table-sm">
         <thead>
@@ -15,8 +15,8 @@
                         <td>{{contact.lastName}}</td>
                         <td>{{contact.mobile}}</td>
                         <td>
-                                <button class="btns btn btn-info" (click)="contactService.populateForm(contact)">Edit</button>
-                                <button class="btns btn btn-danger" (click)="onDelete(contact.$key)">Delete</button>
+                                <button class="btns btn btn-info" (click)="contactService.populateForm(contact)"><i class="fas fa-pen"></i></button>
+                                <button class="btns btn btn-danger" (click)="onDelete(contact.$key)"><i class="fas fa-trash-alt"></i></button>
                         </td>
                 </tr>
         </ng-container>

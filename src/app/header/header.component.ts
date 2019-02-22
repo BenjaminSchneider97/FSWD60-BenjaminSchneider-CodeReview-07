@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+public projectName:string;
 
-  constructor() { }
+	constructor() {
+	this.projectName = "Phone Book";
+}
 
   ngOnInit() {
   }

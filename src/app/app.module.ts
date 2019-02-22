@@ -15,6 +15,9 @@ import { environment } from "../environments/environment";
 import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { ImportantComponent } from './important/important.component';
+import { LandingpageComponent } from './landingpage/landingpage.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { FooterComponent } from './footer/footer.component';
     ContactListComponent,
     HeaderComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    HomepageComponent,
+    ImportantComponent,
+    LandingpageComponent
   ],
   imports: [
     BrowserModule,
