@@ -1,13 +1,15 @@
 <form class="form-inline">
+<h3>Search for Contact</h3>
         <input name="searchInput" class="form-control" placeholder="Search..." #searchInput="ngModel" [(ngModel)]="searchText" style="width: 94%;">
-        <button class="btn btn-outline-primary" (click)="searchText=''"><i class="fas fa-times"></i></button>
+        <button class="btn btn-dark" (click)="searchText=''"><i class="fas fa-times"></i></button>
 </form>
+<h4>Contacts</h4>
 <table class="table table-sm">
         <thead>
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Mobile</th>
-                <th></th>
+                <th class="edit">Edit</th>
         </thead>
         <ng-container *ngFor="let contact of contactArray">
                 <tr class="table-dark" *ngIf="filterCondition(contact)">

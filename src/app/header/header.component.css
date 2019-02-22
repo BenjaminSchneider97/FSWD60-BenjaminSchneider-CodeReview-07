@@ -4,6 +4,10 @@
 	background: url("src/assets/img/banner.jpg");
 	background-size: 100% 100%;
 }
+hr{
+	width: 20%;
+	border-color: #a4b0be;
+}
 .header h1{
 	margin: 0;
 	text-align: center;
@@ -11,4 +15,8 @@
 	font-size: 2.6em;
 	color: #fff;
 	text-shadow: -2px 2px 1px #111;
+}
+.fa-phone{
+	padding-left: 15px;
+	font-size: 0.8em;
 }

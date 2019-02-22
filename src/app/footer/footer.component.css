@@ -1,8 +1,10 @@
 .foot{
 	width: 100%;
+	height: 175px;
 	background-color: #222;
 	display: flex;
 	flex-direction: column;
+	margin-top: 50px;
 }
 .footerimg{
 	margin: 20px auto;

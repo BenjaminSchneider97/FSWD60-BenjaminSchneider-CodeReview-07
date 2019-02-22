@@ -1,3 +1,28 @@
+body{
+	background-color: green;
+}
 .alert-info, .alert-success, .button div{
 	text-align: center;
+}
+.row{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	margin: 0;
+}
+.myheading{
+	margin-bottom: 50px;
+}
+.btn-success{
+	margin: 50px 0;
+}
+.inputs{
+	background-color: #666;
+	margin-top: 25px;
+}
+label{
+	color: #fff;
+}
+.pad{
+	margin: 50px 0 25px 0;
 }

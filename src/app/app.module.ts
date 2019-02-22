@@ -18,6 +18,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ImportantComponent } from './important/important.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
+import { PhonebookheadingComponent } from './phonebookheading/phonebookheading.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { LandingpageComponent } from './landingpage/landingpage.component';
     FooterComponent,
     HomepageComponent,
     ImportantComponent,
-    LandingpageComponent
+    LandingpageComponent,
+    PhonebookheadingComponent
   ],
   imports: [
     BrowserModule,
