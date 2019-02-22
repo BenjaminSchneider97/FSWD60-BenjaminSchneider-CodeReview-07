@@ -7,10 +7,7 @@ import { ContactComponent} from './contact/contact.component';
 
 const routes: Routes = [
 {
-        path:"",component: LandingpageComponent
-},
-{
-        path:"home",component: HomepageComponent
+        path:"",component: HomepageComponent
 },
 {
         path:"important-contacts",component: ImportantComponent

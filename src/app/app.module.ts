@@ -17,7 +17,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ImportantComponent } from './important/important.component';
-import { LandingpageComponent } from './landingpage/landingpage.component';
 import { PhonebookheadingComponent } from './phonebookheading/phonebookheading.component';
 
 @NgModule({
@@ -31,7 +30,6 @@ import { PhonebookheadingComponent } from './phonebookheading/phonebookheading.c
     FooterComponent,
     HomepageComponent,
     ImportantComponent,
-    LandingpageComponent,
     PhonebookheadingComponent
   ],
   imports: [

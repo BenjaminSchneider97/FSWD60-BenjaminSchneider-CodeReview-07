@@ -1,7 +1,12 @@
 body{
 	background-color: green;
 }
-.alert-info, .alert-success, .button div{
+.alert-info, .alert-success{
+	text-align: center;
+	width: 75%;
+	margin: -30px auto 0;
+}
+.button div{
 	text-align: center;
 }
 .row{
@@ -14,7 +19,9 @@ body{
 	margin-bottom: 50px;
 }
 .btn-success{
+	padding: 10px 25px;
 	margin: 50px 0;
+	font-size: 1.3em;
 }
 .inputs{
 	background-color: #666;
@@ -22,6 +29,10 @@ body{
 }
 label{
 	color: #fff;
+}
+.form-control{
+	height: 40px;
+	font-size: 1.3em;
 }
 .pad{
 	margin: 50px 0 25px 0;

@@ -1,0 +1,18 @@
+.jumbotron{
+	background: none;
+}
+.col-lg-12{
+	display: flex;
+}
+.row{
+	width: 100%;
+}
+h2{
+	margin-left: 75px;
+}
+iframe{
+	margin: 0 25px 0 60px;
+}
+.fas{
+	padding: 20px 20px 0 0;
+}
