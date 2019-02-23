@@ -7,14 +7,14 @@
                 <div class="row">
                     <div class="form-group col-lg-6 pad">
                             <label>First Name :</label>
-                            <input formControlName="firstName" class="form-control" [ngClass]="{'is-invalid':submitted && formControls.firstName.errors}">
+                            <input placeholder="Max" formControlName="firstName" class="form-control" [ngClass]="{'is-invalid':submitted && formControls.firstName.errors}">
                             <div class="invalid-feedback" *ngIf="submitted && formControls.firstName.errors">
                             	This field is required
                             </div>
                     </div>
                     <div class="form-group col-lg-6 pad">
                             <label>Last Name :</label>
-                        	<input formControlName="lastName" class="form-control" [ngClass]="{'is-invalid':submitted && formControls.lastName.errors}">
+                        	<input placeholder="Mustermann" formControlName="lastName" class="form-control" [ngClass]="{'is-invalid':submitted && formControls.lastName.errors}">
                         	<div class="invalid-feedback" *ngIf="submitted && formControls.lastName.errors">
                         		This field is required
                         	</div>
@@ -23,7 +23,7 @@
                 <div class="row">
                     <div class="form-group col-lg-12">
                             <label>Phone Number :</label>
-                            <input formControlName="mobile" class="form-control" [ngClass]="{'is-invalid':submitted && formControls.mobile.errors}" type="number">
+                            <input placeholder="43000000" formControlName="mobile" class="form-control" [ngClass]="{'is-invalid':submitted && formControls.mobile.errors}" type="number">
                             <div class="invalid-feedback" *ngIf="submitted && formControls.mobile.errors">
                                     <label *ngIf="formControls.mobile.errors.required">This field is required</label>
                                     <label *ngIf="formControls.mobile.errors.minlength">at least 8 numbers</label>

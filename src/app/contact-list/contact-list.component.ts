@@ -11,7 +11,7 @@ export class ContactListComponent implements OnInit {
 	showDeletedMessage : boolean;
 	searchText:string = "";
 
-	constructor(private contactService: ContactService) { }
+	constructor(public contactService: ContactService) { }
 
   ngOnInit() {
   	 this.contactService.getContact().subscribe(
