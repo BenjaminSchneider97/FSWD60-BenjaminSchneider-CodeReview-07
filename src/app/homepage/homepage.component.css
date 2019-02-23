@@ -4,6 +4,23 @@
 .col-lg-12{
 	display: flex;
 }
+iframe{
+	width: 700px;
+	height: 350px;
+}
+@media screen and (max-width: 900px){
+	.col-lg-12{
+		flex-direction: column;
+	}
+	.contactinfo{
+		margin-left: 20px;
+		border-left: none!important;
+	}
+	iframe{
+		max-width: 90%;
+		margin-left: 20px;
+	}
+}
 .row{
 	width: 100%;
 }

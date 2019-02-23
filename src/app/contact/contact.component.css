@@ -38,3 +38,8 @@ label{
 .pad{
 	margin: 50px 0 25px 0;
 }
+@media screen and (max-width: 900px){
+	.content{
+		flex-direction: column;
+	}
+}

@@ -1,5 +1,5 @@
 <app-phonebookheading></app-phonebookheading>
-<div class="row">
+<div class="row content">
         <div class="col-lg-5">
         	<h3>Create a new Contact</h3>
             <form [formGroup]="this.contactService.form" (ngSubmit)="onSubmit()" class="inputs">
@@ -21,7 +21,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="form-group col-lg-12">
+                    <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <label>Phone Number :</label>
                             <input placeholder="43000000" formControlName="mobile" class="form-control" [ngClass]="{'is-invalid':submitted && formControls.mobile.errors}" type="number">
                             <div class="invalid-feedback" *ngIf="submitted && formControls.mobile.errors">
